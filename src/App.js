@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/HeaderComponent/Header";
 import Main from "./components/MainComponent/Main";
 import initialProducts from "./data/products";
+import Footer from "./components/FooterComponent/Footer";
 
 var nextId = 6;
 function App() {
@@ -42,6 +43,7 @@ function App() {
         fillForm={fillForm}
         currentProduct={currentProduct}
       ></Main>
+      <Footer></Footer>
     </div>
   );
 }
