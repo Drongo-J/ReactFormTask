@@ -1,0 +1,28 @@
+#form {
+  width: auto;
+  width: 93%;
+  align-self: center;
+}
+
+.form-title {
+  color: white !important;
+  text-align: center !important;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.form-btn {
+  background-color: #7f00ff !important;
+  border: white !important;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+}

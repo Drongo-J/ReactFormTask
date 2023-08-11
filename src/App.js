@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/HeaderComponent/Header";
+import Main from "./components/MainComponent/Main";
+import initialProducts from "./data/products";
 
+var nextId = 6;
 function App() {
+  const [products, setProducts] = useState(initialProducts);
+  const [currentProduct, setCurrentProduct] = useState(null);
+
+  function addProduct(newProduct) {
+    const newProductWithId = { ...newProduct, id: nextId++ };
+    const newProducts = [...products, newProductWithId];
+    setProducts(newProducts);
+  }
+
+  function updateProduct(updatedProduct) {
+    console.log(updatedProduct);
+    const updatedProducts = products.map((product) => {
+      if (product.id === updatedProduct.id) {
+        return { ...product, ...updatedProduct };
+      }
+      return product;
+    });
+  
+    console.log(updatedProducts);
+    setProducts(updatedProducts);
+  }
+
+  function fillForm(product) {
+    setCurrentProduct(product);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <Main
+        products={products}
+        addProduct={addProduct}
+        updateProduct={updateProduct}
+        fillForm={fillForm}
+        currentProduct={currentProduct}
+      ></Main>
     </div>
   );
 }

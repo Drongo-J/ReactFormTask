@@ -1,0 +1,22 @@
+.card {
+  width: 18rem;
+  border: 5px solid #7f00ff;
+  color: #7f00ff;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.imageContainer {
+  height: 350px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}  
+
+.imageContainer img {
+  max-height: 300px;  
+  width: auto;
+  max-width: 100%;
+}  
+

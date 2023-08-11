@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap");
+
+
+:root {
+  --text-primary: hsl(180, 6%, 38%);
+  --space-05: 0.5rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.logo {
+  height: 45px;
+}
+
+.container {
+  flex-grow: 1;
+  display: grid;
+  width: 100%;
+  place-self: center;
+  inline-size: clamp(var(--min-width), var(--padding-space), var(--max-width));
+  align-self: center;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  --header-margin: 5vh;
+  --shadow: 0 0.1875em 0.3125em #0003, 0 0.125em 0.5em #0002;
+  min-block-size: var(--header);
+  background-color: #fff;
+  outline: 1px solid var(--border-clr);
+  box-shadow: var(--shadow);
+}
+    
+.logo-text {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-content-left {
+  grid-auto-flow: column;
+  inline-size: max-content;
+  place-content: center;
+}
+
+.my-padding {
+  gap: var(--space-05);
+  padding: 0.7em 0.75em;
+  align-items: center;
+  display: inline-flex;
+}
+
+.download-button {
+  border: 2px solid black;
+  padding: 3px 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 10px;
+}
