@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactFormTask/static/css/main.820642fc.css",
+    "main.js": "/ReactFormTask/static/js/main.b51d1e54.js",
+    "static/js/787.6132404a.chunk.js": "/ReactFormTask/static/js/787.6132404a.chunk.js",
+    "index.html": "/ReactFormTask/index.html",
+    "main.820642fc.css.map": "/ReactFormTask/static/css/main.820642fc.css.map",
+    "main.b51d1e54.js.map": "/ReactFormTask/static/js/main.b51d1e54.js.map",
+    "787.6132404a.chunk.js.map": "/ReactFormTask/static/js/787.6132404a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.820642fc.css",
+    "static/js/main.b51d1e54.js"
+  ]
+}
